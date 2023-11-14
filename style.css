@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(#0bd5e3, #000000);
+    background-size: cover;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+
+    align-items: center;
+    justify-content: center
+}
+
+#fundo {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 600px;
+    height: 300px;
+
+    border-radius: 10px;
+
+    background-color: #003a3e;
+}
+
+#caixaInterna-tempo {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 250px;
+}
+
+/* barra progresso */
+h3 {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: flash infinite; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+#caixa-carregamento {
+    margin-top: 100px;
+}
+
+#barraProgresso {
+    width: 500px;
+    height: 20px;
+    background-color: #0bd4ea;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+#progresso {
+    height: 100%;
+    width: 0;
+    background-color: #9900ff;
+    border-radius: 10px;
+    transition: 1s linear;
+}
