@@ -6,39 +6,30 @@
 
 body {
     display: flex;
-
     width: 100vw;
     height: 100vh;
-
     background-image: linear-gradient(#0bd5e3, #000000);
     background-size: cover;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
-
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 #fundo {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
     width: 600px;
     height: 300px;
-
     border-radius: 10px;
-
     background-color: #003a3e;
 }
 
 #caixaInterna-tempo {
     display: flex;
     flex-direction: column;
-
     width: 500px;
     height: 250px;
 }
@@ -47,9 +38,8 @@ body {
 h3 {
     display: inline-block;
     margin: 0 0.5rem;
-  
-    animation: flash infinite; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation: flash infinite;
+    animation-duration: 2s;
 }
 
 #caixa-carregamento {
@@ -63,14 +53,23 @@ h3 {
     margin: auto;
     margin-bottom: 20px;
     border-radius: 5px;
-
     margin-top: 10px;
+    overflow: hidden;
 }
 
 #progresso {
     height: 100%;
-    width: 0;
-    background-color: #9900ff;
+    width: 200%;
+    background: linear-gradient(90deg, #ffffff00 0%, #0830facc 50%, #ffffff00 100%);
     border-radius: 10px;
-    transition: 1s linear;
+    animation: luzPassando 5s infinite linear;
+}
+
+@keyframes luzPassando {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
